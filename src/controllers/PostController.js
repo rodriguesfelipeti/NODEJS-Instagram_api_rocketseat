@@ -34,6 +34,7 @@ module.exports = {
         })
 
         req.io.emit('post', post)
+        console.log('entrou aqui')
         return res.json(post)
     }
 }
