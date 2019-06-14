@@ -5,6 +5,7 @@ const fs = require('fs')
 
 module.exports = {
    async index(req, res){ 
+       console.log('aqui')
         const posts = await Post.find().sort('-createdAt') // - signifca desc
         return res.json(posts)
    },
